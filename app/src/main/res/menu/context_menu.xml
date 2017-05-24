@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/male" android:title="male" android:icon="@drawable/ic_delete"/>
+    <item android:id="@+id/femail" android:title="femal" android:icon="@drawable/ic_add"/>
+    <item android:id="@+id/other" android:title="other" android:icon="@drawable/ic_backup"/>
+</menu>
