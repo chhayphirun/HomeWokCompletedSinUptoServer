@@ -12,6 +12,12 @@ public class User implements Parcelable {
     private String username;
     private String password;
 
+    public User(String username, String password, String email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
+
     public User(String username, String password) {
         this.username = username;
         this.password = password;
@@ -27,6 +33,12 @@ public class User implements Parcelable {
     public User(int id, String username, String password, String email) {
 
         this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
+
+    public User() {
         this.username = username;
         this.password = password;
         this.email = email;
@@ -87,7 +99,7 @@ public class User implements Parcelable {
         this.email = in.readString();
     }
 
-    public static final Parcelable.Creator<User> CREATOR = new Parcelable.Creator<User>() {
+    public static final Creator<User> CREATOR = new Creator<User>() {
         @Override
         public User createFromParcel(Parcel source) {
             return new User(source);
