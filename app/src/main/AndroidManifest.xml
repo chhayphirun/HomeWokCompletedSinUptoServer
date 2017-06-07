@@ -17,17 +17,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".Login">
-            <action android:name="com.example.lier.action.COMMAN"/>
-            <action android:name="com.example.lier.action.Login"/>
-            <category android:name="android.intent.category.DEFAULT"/>
+            <action android:name="com.example.lier.action.COMMAN" />
+            <action android:name="com.example.lier.action.Login" />
+
+            <category android:name="android.intent.category.DEFAULT" />
         </activity>
         <activity android:name=".SignUp">
             <intent-filter>
-                <action android:name="com.example.lier.action.COMMAN"/>
-                <action android:name="com.example.lier.action.SignUp"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.example.lier.action.COMMAN" />
+                <action android:name="com.example.lier.action.SignUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".HomeActivity"></activity>
     </application>
 
 </manifest>

@@ -46,7 +46,10 @@ public class Login extends AppCompatActivity {
             user = new Gson().fromJson(userFromJson, User.class);
             Toast.makeText(this,"Name :"+user.getName()+" ,Password : "+userpasswor, Toast.LENGTH_SHORT).show();
             Log.e("ooooo",userpasswor);
-            startActivity(new Intent(this,SignUp.class));
+            if(!user.getName().equals("")&&!user.getPassword().equals("")){
+                startActivity(new Intent(this,HomeActivity.class));
+
+            }
         }
 
 
