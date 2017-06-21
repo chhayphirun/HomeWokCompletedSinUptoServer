@@ -9,9 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-
-import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +39,7 @@ public class Login extends AppCompatActivity {
         String userFromJson = sharedPreferences.getString(Constant.USER, "N/A");
 //        String userListFromJson = sharedPreferences.getString(Constant.USER_LIST, "N/A");
         User user;
-        if (!userFromJson.equals("N/A")){
+        /*if (!userFromJson.equals("N/A")){
             user = new Gson().fromJson(userFromJson, User.class);
             Toast.makeText(this,"Name :"+user.getName()+" ,Password : "+userpasswor, Toast.LENGTH_SHORT).show();
             Log.e("ooooo",userpasswor);
@@ -51,7 +48,7 @@ public class Login extends AppCompatActivity {
 
             }
         }
-
+*/
 
 
         /*findViewById(R.id.btnlogin).setOnClickListener(new View.OnClickListener() {
